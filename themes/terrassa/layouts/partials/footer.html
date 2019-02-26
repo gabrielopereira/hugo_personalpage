@@ -1,0 +1,31 @@
+<footer class="footer">
+    {{ if $.Site.Params.social }}
+    {{ $items := $.Site.Params.social }}
+    {{ $len := (len $items) }}
+
+    {{ if gt $len 0 }}
+    <div class="footer__social">
+        {{ range $k, $v := $items }}
+        {{ if $v}}
+        <a href="{{ $v }}" class="footer__social__link" alt="{{ $k }}" target="_blank" aria-label="{{ $v }}" rel="noopener">
+            <span>
+                <i class="fab fa-{{ $k }}"></i>
+            </span>
+        </a>
+        {{ end }}
+        {{ end }}
+
+        <p class="footer__contact__item">
+            <span><i class="far fa-envelope"></i></span>
+            <a href="mailto:gabrielopereira@gmail.com" class="footer_link" alt="Email">
+                gabrielopereira@gmail.com
+            </a>
+        </p>
+    </div>
+    {{ end }}
+    {{ end }}
+
+
+
+    {{ partial "scripts.html" . }}
+</footer>
