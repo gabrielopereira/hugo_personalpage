@@ -1,0 +1,71 @@
+baseurl = "/"
+title = "Gabriel Pereira"
+author = "Gabriel pereira"
+googleAnalytics = ""
+defaultContentLanguage = "en"
+language = "en-US"
+paginate = 3 # Number of posts per page
+
+theme = "terrassa"
+
+[outputs]
+    home = ["HTML", "RSS"]
+    page = ["HTML", "RSS"]
+
+[params]
+    description = "Gabriel Pereira's personal site."
+    favicon = "favicon.ico" # Relative URL
+    logo = "" # Absolute URL
+
+[params.hero]
+    textColor = "" # Empty for default color
+[params.posts]
+    showAuthor = false
+    showDate = true
+    showTags = true
+    dateFormat = "2 Jan 2006"
+
+[params.contact] # Contact info
+    email = "gabrielpereira@gmail.com"
+    phone = ""
+    skype = ""
+    address = ""
+
+[params.social] # Social networks
+    twitter = "https://twitter.com/john"
+    facebook = ""
+    github = "https://github.com/john"
+    gitlab = ""
+    codepen = ""
+    instagram = ""
+    pinterest = ""
+    youtube = ""
+    linkedin = ""
+    weibo = ""
+    mastodon = ""
+    tumblr = ""
+    flickr = ""
+    "500px" = ""
+
+[params.copy] # Copyright
+    copy = " " # Empty for default content
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = false
+    [privacy.instagram]
+        disable = false
+        simple = false
+    [privacy.twitter]
+        disable = false
+        enableDNT = true
+        simple = false
+    [privacy.vimeo]
+        disable = false
+        simple = false
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
